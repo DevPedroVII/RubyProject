@@ -4,7 +4,8 @@ Dado('que o usuario queria logar') do
 end
 
 Quando('ele digitar as credenciais Validas') do
-
+  @test =LoginPage.new
+  @test.userLogin
 end
 
 Entao('O site vai ser acessado') do
