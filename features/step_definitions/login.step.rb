@@ -1,11 +1,11 @@
 Dado('que o usuario queria logar') do
- visit''
- sleep 5
+  @test =LoginPage.new
+  @test.load
+  @test.userLogin
 end
 
 Quando('ele digitar as credenciais Validas') do
-  @test =LoginPage.new
-  @test.userLogin
+
 end
 
 Entao('O site vai ser acessado') do
