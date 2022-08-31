@@ -9,5 +9,6 @@ Quando('ele digitar as credenciais Validas') do
 end
 
 Entao('O site vai ser acessado') do
-
+  @home = HomePage.new
+  @home.checkLoginSucessful
 end
